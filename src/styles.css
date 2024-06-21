@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Modo claro oscuro*/
+:root {
+    --background-color: #F3F3FE;
+    --primary-text-color: #1F2937;
+    --secondary-text-color: #323233;
+    --tertiary-text-color: #4B5563;
+
+    /**/
+    --primary-menu-color-hover:#5B8BB1;
+    --secondary-menu-color-hover:#5B8BB1;
+
+    --jhampo-text-color:#5B8BB1;
+} 
+.dark-theme {
+    --background-color: #141416;
+    --primary-text-color: #EFEBFA;
+    --secondary-text-color: #D6D0E0;
+    --tertiary-text-color: #D6D0E0;
+
+    /**/
+    --primary-menu-color-hover:#5B8BB1;
+    --secondary-menu-color-hover:#75DAD9;
+
+    --jhampo-text-color:#5B8BB1;
+}
+/*Color en el navegador*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #F3F3FE;
+        --primary-text-color: #1F2937;
+        --secondary-text-color: #323233;
+        --tertiary-text-color: #4B5563;
+    
+        /**/
+        --primary-menu-color-hover:#5B8BB1;
+        --secondary-menu-color-hover:#5B8BB1;
+    
+        --jhampo-text-color:#5B8BB1;
+    } 
+    .dark-theme {
+        --background-color: #141416;
+        --primary-text-color: #EFEBFA;
+        --secondary-text-color: #D6D0E0;
+        --tertiary-text-color: #D6D0E0;
+    
+        /**/
+        --primary-menu-color-hover:#5B8BB1;
+        --secondary-menu-color-hover:#75DAD9;
+    
+        --jhampo-text-color:#5B8BB1;
+    }
+}
+body{
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}

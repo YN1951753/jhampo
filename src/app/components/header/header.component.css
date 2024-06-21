@@ -1,0 +1,174 @@
+header{
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+header{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 2rem;
+    gap: 1rem;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/*LOGO*/
+.logo{
+    padding: 0.5rem 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.logo img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.logo figcaption{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+/*ITEMS*/
+.list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.list li{
+    padding: 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+.list li.select a{
+    color: var(--primary-menu-color-hover);
+}
+.list li.select::before{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-menu-color-hover);
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+/* .list li::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: var(--primary-menu-color-hover);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 3px 3px;
+    transition: width 0.3s;
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.6);
+}
+.list li:hover::after{
+    width: 100%;
+} */
+.list li a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 550;
+}
+.list li:hover a{
+    color: var(--secondary-menu-color-hover);
+}
+
+/*BTN*/
+.btn{
+    padding: 15px;
+    margin-top: 5px;
+    display: none;
+  
+}
+.btn button{
+    width: 1.8rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn button > div{
+    background-color: var(--primary-text-color);
+    width: 100%;
+    height: 1.5px;
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+.btn.btn-toggle button div:first-child{
+    transform: rotate(45deg);
+}
+.btn.btn-toggle button div:nth-child(2){
+    opacity: 0;
+}
+.btn.btn-toggle button div:last-child{
+    transform: rotate(-45deg);
+}
+@media (max-width: 510px){
+    header{
+        width: 100%;
+        background-color: transparent;
+        flex-direction: column;
+        gap: 0;
+        border-bottom: 1px solid rgb(204, 204, 204,0.2);
+    }
+    .list li.select::before{
+        width: 0;
+    }
+    
+    .btn{
+        display: block;
+    }
+    .menu  {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .nav{
+        margin-bottom: 0;
+
+        width: 100%;
+    }
+    .nav{
+    
+        height: 100%;
+    }
+    .list{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;  
+        height: 0px;  
+        overflow: hidden;
+        transition: all 0.5s ease; 
+    }
+    .list.list-toggle{
+        height: 210px;
+    }
+    .no-transition{
+        transition: none; 
+    }
+
+}

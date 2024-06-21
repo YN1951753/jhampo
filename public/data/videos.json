@@ -1,0 +1,174 @@
+[
+    {
+        "id":1,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/SqNOKrVey_w/maxresdefault.jpg",
+        "description":"Aprende a crear un juego de Space Invaders en C# utilizando Programación Orientada a Objetos (POO). Es fácil y divertido de desarrollar.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/naves-csharp",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+     
+    },
+    {
+        "id":2,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/nvh51c4UfmM/maxresdefault.jpg",
+        "description":"Crea una barra de navegación lateral responsiva con HTML, CSS y JavaScript, incluyendo modo oscuro y modo claro.",
+        "languages":[
+            {
+                "name":"HTML",
+                "src":"assets/languages/html-5.svg",
+                "color":"#351E0B"
+            },
+            {
+                "name":"CSS",
+                "src":"assets/languages/css-3.svg",
+                "color":"#0F2B37"
+            },
+            {
+                "name":"JAVASCRIPT",
+                "src":"assets/languages/javascript.svg",
+                "color":"#373207"
+            }
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    },
+   
+    
+    {
+        "id":3,
+        "title":"Programación Java: Juego TRES EN RAYA - Diseño moderno",
+        "src":"https://img.youtube.com/vi/1jLzIY2vXwU/maxresdefault.jpg",
+        "description":"Programa un juego de tres en raya moderno en Java, completamente desde cero y con una interfaz agradable ",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=1jLzIY2vXwU&t=861s",
+        "github":"https://github.com/jhampo/TicTacToe-Java/tree/master"
+    },
+    {
+        "id":4,
+        "title":"Cómo crear un Juego Simple en JavaScript",
+        "src":"https://img.youtube.com/vi/Oat0bMq5NGc/maxresdefault.jpg",
+        "description":"Aprende JavaScript creando un juego de bloques desde cero, sin utilizar bibliotecas ni frameworks.",
+        "languages":[
+            {
+                "name":"HTML",
+                "src":"assets/languages/html-5.svg",
+                "color":"#351E0B"
+            },
+            {
+                "name":"CSS",
+                "src":"assets/languages/css-3.svg",
+                "color":"#0F2B37"
+            },
+            {
+                "name":"JAVASCRIPT",
+                "src":"assets/languages/javascript.svg",
+                "color":"#373207"
+            }
+
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://youtu.be/Oat0bMq5NGc",
+        "github":"https://github.com/jhampo/BlockGame/tree/main/game"
+    },
+    {
+        "id":5,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/mFlhxnmel8M/maxresdefault.jpg",
+        "description":"Aprende a crear un juego de Space Invaders en C# utilizando Programación Orientada a Objetos (POO). Es fácil y divertido de desarrollar.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    },
+    {
+        "id":6,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/efswDcAw484/maxresdefault.jpg",
+        "description":"Crea una barra de navegación lateral responsiva con HTML, CSS y JavaScript, incluyendo modo oscuro y modo claro.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    }
+    ,
+    {
+        "id":7,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/Sl6YUIvwbAk/maxresdefault.jpg",
+        "description":"Crea una barra de navegación lateral responsiva con HTML, CSS y JavaScript, incluyendo modo oscuro y modo claro.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    }
+    ,
+    {
+        "id":8,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/nvh51c4UfmM/maxresdefault.jpg",
+        "description":"Crea una barra de navegación lateral responsiva con HTML, CSS y JavaScript, incluyendo modo oscuro y modo claro.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    }
+    ,
+    {
+        "id":9,
+        "title":"Crea tu Primer Juego DESDE 0 en C#",
+        "src":"https://img.youtube.com/vi/nvh51c4UfmM/maxresdefault.jpg",
+        "description":"Crea una barra de navegación lateral responsiva con HTML, CSS y JavaScript, incluyendo modo oscuro y modo claro.",
+        "languages":[
+            {
+                "name":"C#",
+                "src":"assets/languages/csharp.svg",
+                "color":"#3B3036"
+            } 
+        ],
+        "tutorial":"/juego-bloques",
+        "youtube":"https://www.youtube.com/watch?v=SqNOKrVey_w",
+        "github":"https://github.com/jhampo/JuegoDeNaves-Parte1/tree/master"
+    }
+]
+   

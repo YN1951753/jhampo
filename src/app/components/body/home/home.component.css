@@ -1,0 +1,145 @@
+.section-1{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0 2rem;
+}
+/*Info*/
+.section-1 .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+
+}
+.section-1 .info h1{
+    background: linear-gradient(90deg, #5B8BB1, #75DAD9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: var(--primary-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+}
+.info .text-animation{
+    font-size: 1.3rem;
+    position: relative;
+    min-width: 280px;
+    margin-bottom: 20px;
+    color: var(--jhampo-text-color);
+}
+.info .text-animation span{
+    position: relative;
+    color: var(--primary-text-color);
+}
+.info .description{
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+/*image*/
+.section-1 .image{
+    width: 50%;
+
+
+    animation: moveImage 3s ease-in-out 0s infinite alternate;
+}
+@keyframes moveImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3%);
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+.section-1 .image img{
+    width: 100%;
+}
+/*Enfasis*/
+em, strong {
+    font-style: normal; 
+    font-weight: normal; 
+}
+/*Redes*/
+.section-1 .redes{
+    display: flex;
+    gap: 1rem;
+}
+.section-1 .redes img{
+    width: 1.4rem;
+}
+.section-1 .redes img{
+    width: 1.4rem;
+    transition: all 0.3s ease;
+} 
+.section-1 .redes .svg-icon{
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 5px;
+}  
+.section-1 .redes .svg-icon:hover img{
+    transform: scale(1.2 );
+}
+
+/*Responsive*/
+/*H1*/
+@media (max-width:900px){
+    .section-1 .info h1{
+        font-size: 3.5rem;
+    }
+    .section-1 .text-animation{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:744px){
+    .section-1 .info h1{
+        font-size: 3rem;
+    }
+    .section-1 .text-animation{
+        font-size: 1rem;
+    }
+}
+@media (max-width:415px){
+    .section-1 .info h1{
+        font-size: 2.5rem;
+    }
+    .section-1 .text-animation{
+        font-size: 0.8rem;
+    }
+}
+/* 680 */
+@media (max-width:720px){
+    .section-1 .info{
+        padding: 0 0;
+    }
+}
+@media (max-width:600px){
+    .section-1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+   
+    }
+    .section-1 .info{
+        margin-top: 15px;
+        order: 2;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-1 .image{
+        width: 70%;
+    }
+    .section-1 .image{
+        width: 70%;
+    }
+}
+@media (max-width:450px){
+  
+    .section-1 .image{
+        width: 90%;
+    }
+}

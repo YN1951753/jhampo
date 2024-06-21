@@ -1,0 +1,25 @@
+<header id="header-menu">
+    <div class="menu">
+        <figure class="logo"  routerLink="/home">
+            <img src="assets/logo/jhampier.jpg" alt="Logo de JHAMPO">
+        </figure>  
+        <div class="btn" [ngClass]="{'btn-toggle': isToggled}" (click)="menuToggle()">
+            <button #btnMenu>
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </div>
+    </div>
+    <nav class="nav"  >
+        <ul class="list" #list [ngClass]="{'list-toggle ': isToggled}">
+            <li #home routerLink="/home"  (click)="onRouteClick()"><a>Inicio</a></li>
+            <li #content routerLink="/content"  (click)="onRouteClick()"><a >Contenido</a></li>
+            <li #game ><a (click)="onRouteClick()">Juegos</a></li>
+            <li #article ><a (click)="onRouteClick()">Artículos</a></li>
+        </ul>
+    </nav>
+    
+    <!-- <button (click)=" toggleTheme()" style="">Hola</button>  -->
+</header>
+

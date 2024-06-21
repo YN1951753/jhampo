@@ -1,0 +1,110 @@
+<div class="tutoriales">
+    @for (item of videos; track item) {
+        <div class="tutorial">
+            <a class="mini-container" href="{{item.youtube}}" target="_blank">
+                <img class="mini" ngSrc="{{item.src}}" alt="{{item.title}}" width="1280" height="720">
+            </a>
+          
+            <article>
+                <header>
+                    <h2>{{item.title}}</h2>
+                    <div class="tecnologias">
+                        @for (i of item.languages; track i) {
+                            <div [ngStyle]="{'background': i.color}">
+                                <img src="{{i.src}}" alt="icon-language">
+                                <span>{{i.name}}</span>
+                            </div>
+                        }
+                    </div>
+                </header>
+                <main>
+                    <p>{{item.description}}</p>
+                </main>
+                <footer>
+                    <aside >
+                        <a routerLink="{{item.tutorial}}">
+                            <img src="assets/icons/link-white.svg" alt="ic-tutorial">
+                            <span>Tutorial</span>
+                        </a>
+                    </aside>
+                    <aside>
+                        <a href="{{item.github}}" target="_blank">
+                            <img src="assets/icons/github-white.svg" alt="github">
+                            <span>Código</span>
+                        </a>
+                    </aside>
+                </footer>   
+          
+            </article>   
+        </div>
+    }
+    
+
+    <!-- <article>
+        <img src="https://img.youtube.com/vi/tFilgwm6Aww/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/QA_gAdlcx40/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+
+    <article>
+        <img src="https://img.youtube.com/vi/Czeuy1MB5Lg/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/mFlhxnmel8M/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/p8YbJrZKeAU/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+
+    <article>
+        <img src="https://img.youtube.com/vi/ZzVXaE14938/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/rM3vc7rQrsE/mqdefault.jpg" alt="img">
+        <h2>Juego de Na hecon con js scrio íto son ecticonezs</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/Sl6YUIvwbAk/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+
+   
+    <article>
+        <img src="https://img.youtube.com/vi/mHtaRP2-XP4/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/6_OvS7rcTdM/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+
+
+    <article>
+        <img src="https://img.youtube.com/vi/nvh51c4UfmM/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/1jLzIY2vXwU/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/efswDcAw484/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/tZhQRcJAoT4/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article>
+    <article>
+        <img src="https://img.youtube.com/vi/IIb-kxfH4Lw/mqdefault.jpg" alt="img">
+        <h2>Juego de Naves JAVASCRIPT2</h2>
+    </article> -->
+</div>
+

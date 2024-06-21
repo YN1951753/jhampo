@@ -1,0 +1,155 @@
+
+.tutoriales{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px 15px 15px 15px;
+
+}
+.tutoriales .tutorial{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.tutoriales .tutorial .mini-container{
+     width: 40%;
+     height: auto;
+     overflow: hidden;
+     border-radius: 15px;
+     position: relative;
+}
+.tutoriales .tutorial article{
+    width: 60%;
+}
+.tutoriales .tutorial .mini-container:hover::after{
+    width: 100%;
+}
+.tutoriales .tutorial .mini-container:hover .mini{
+    transform: scale(1.03);
+}
+.tutoriales .tutorial .mini-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+.tutoriales .tutorial .mini{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+} 
+
+.tutoriales .tutorial h2{
+    font-size: 1.3rem;
+    color: var(--primary-text-color);
+    width: 100%;
+    word-wrap: break-word; 
+} 
+.tutoriales .tutorial p{
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    word-wrap: break-word;
+    margin-top: .5rem; 
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+} 
+.tutoriales .tecnologias {
+    display: flex;
+    justify-content: left;
+}
+.tutoriales .tecnologias div{
+    width: auto;
+    display: flex;
+    background-color:#000000;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0;
+    padding: 6px 13px;
+    border-radius: 15px;
+    gap: 0.4rem;
+}
+.tutoriales .tecnologias img{
+
+    width: 0.8rem;
+}
+.tutoriales .tecnologias span{
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: #E5E5E6;
+}
+/* footer */
+.tutorial footer {
+    display: flex;
+    gap: 1rem;
+}
+.tutorial footer aside {
+    background-color:#1F2937;
+    padding: 0.4rem 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tutorial footer aside a{
+    text-decoration: none;
+    color: #E5E5E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.tutorial footer aside:hover img{
+    animation: rotate45 0.3s ease-in-out;
+}
+.tutorial footer aside img{
+    width: 1.5rem;
+    transition: transform 0.1s;
+}
+@keyframes rotate45 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+/*Responsive*/
+@media (max-width: 900px){
+    .tutoriales{
+        display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(310px,1fr)
+    );
+    }
+    .tutoriales .tutorial {
+        flex-direction: column;
+       justify-content: start;
+    }
+    .tutoriales .tutorial .mini-container{
+        width: 100%;
+    }
+    .tutoriales .tutorial article{
+        width: 100%;
+    }
+    .tutoriales .tutorial p{
+      
+        margin-bottom: 0.8rem;
+
+    } 
+}
