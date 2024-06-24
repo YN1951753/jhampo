@@ -2,7 +2,7 @@
     @for (item of videos; track item) {
         <div class="tutorial">
             <a class="mini-container" href="{{item.youtube}}" target="_blank">
-                <img class="mini" ngSrc="{{item.src}}" alt="{{item.title}}" width="1280" height="720">
+                <img class="mini" ngSrc="{{item.src}}" alt="{{item.title}}" width="1280" height="720" priority>
             </a>
           
             <article>
@@ -21,8 +21,8 @@
                     <p>{{item.description}}</p>
                 </main>
                 <footer>
-                    <aside >
-                        <a routerLink="{{item.tutorial}}">
+                    <aside routerLink="tu-primer-juego-en-csharp">
+                        <a >
                             <img src="assets/icons/link-white.svg" alt="ic-tutorial">
                             <span>Tutorial</span>
                         </a>

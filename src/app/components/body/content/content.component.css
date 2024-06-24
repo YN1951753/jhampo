@@ -1,5 +1,12 @@
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 article{
     width: 100%;
+    max-width: 900px;
 }
 header h2{
     padding: 15px;

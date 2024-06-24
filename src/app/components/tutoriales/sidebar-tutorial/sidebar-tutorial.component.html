@@ -1,0 +1,8 @@
+<aside class="left-sidebar">
+    <ul >
+        @for (item of items; track item.id) {
+            <li><a href="#">{{item.text}}</a></li>
+        }
+    </ul>
+    <app-anuncio-vertical/>
+</aside>

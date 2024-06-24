@@ -3,7 +3,7 @@
         "id":1,
         "title":"Crea tu Primer Juego DESDE 0 en C#",
         "src":"https://img.youtube.com/vi/SqNOKrVey_w/maxresdefault.jpg",
-        "description":"Aprende a crear un juego de Space Invaders en C# utilizando Programación Orientada a Objetos (POO). Es fácil y divertido de desarrollar.",
+        "description":"Aprende a crear un juego de Space Invaders en la consola de C# utilizando Programación Orientada a Objetos (POO)",
         "languages":[
             {
                 "name":"C#",

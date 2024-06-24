@@ -1,12 +1,14 @@
-<article>
-    <header>
-        <h2>Tutoriales Programación</h2>
-    </header>
-    <main>
-        <app-content-section [videos]="getVisibleVideos()"/>
-    </main>
-    <footer>
-        <div class="previous" #previous (click)="previousPage()"></div>
-        <div class="next" #next (click)="nextPage()"></div>
-    </footer>
-</article>
+<div class="container">
+    <article>
+        <header>
+            <h2>Tutoriales Programación</h2>
+        </header>
+        <main>
+            <app-content-section [videos]="getVisibleVideos()"/>
+        </main>
+        <footer>
+            <div class="previous" #previous (click)="previousPage()"></div>
+            <div class="next" #next (click)="nextPage()"></div>
+        </footer>
+    </article>
+</div>

@@ -10,7 +10,6 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements AfterViewInit{
   constructor(@Inject(PLATFORM_ID) private platformId: Object){
-
   }
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -21,10 +20,8 @@ export class HomeComponent implements AfterViewInit{
         loop: true,
         backDelay : 2000
       };
-  
       new Typed('#typed-text', options);
     }
-  
   }
 
 }

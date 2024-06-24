@@ -1,0 +1,69 @@
+header{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+.img-title{
+    width: 5.2rem ;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+}
+a{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1F2937;
+    padding: 0.4rem 0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 5px;
+    
+}
+a:hover .icon-youtube{
+    animation: rotate45 0.3s ease-in-out;
+}
+aside{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    
+}
+.icon-youtube{
+    width: 1.5rem;
+  
+}
+
+
+@keyframes rotate45 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+@media (max-width: 930px) {
+    .img-title{
+        display: non;
+        position: absolute;
+        right: 0;
+        width: 10rem;
+        z-index: -2;
+        opacity: 0.2;
+        bottom: -25px;
+    }
+}

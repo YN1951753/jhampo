@@ -1,9 +1,16 @@
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section-1{
     margin-top: 60px;
     display: flex;
     width: 100%;
-    position: relative;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+    max-width: 900px;
 }
 /*Info*/
 .section-1 .info{
@@ -41,8 +48,6 @@
 /*image*/
 .section-1 .image{
     width: 50%;
-
-
     animation: moveImage 3s ease-in-out 0s infinite alternate;
 }
 @keyframes moveImage{
