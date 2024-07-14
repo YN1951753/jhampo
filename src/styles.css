@@ -1,4 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #F7FCFF;
+    --cero-text-color:black;
+    --primary-text-color: #232F3E;
+    --secondary-text-color: #333333;
+    --tertiary-text-color: #4B5563;
+    --text-color-sidebar-lateral:#333;
+    
+    /**/
+    --h2-color:#0068B7;
+    /**/
+    --primary-menu-color-hover:#5B8BB1;
+    --secondary-menu-color-hover:#5B8BB1;
+
+    --jhampo-text-color:#5B8BB1;
+
+  
+} 
+h1{
+    color: var(--cero-text-color);
+    font-size: 35px;
+    line-height: 110%;
+}
+h2{
+    color: var(--h2-color);
+    font-size: 26px;
+    line-height: 120%;
+}
+p{
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .3px;
+   line-height: 26px;
+}
+/*Modo claro oscuro*/
+
+body{
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+
+
+
+/*Verion mododo */
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
 
 *{
@@ -7,14 +64,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Modo claro oscuro*/
+
 :root {
-    --background-color: #F3F3FE;
+    --background-color: #F7FCFF;
+    --cero-text-color:black;
     --primary-text-color: #1F2937;
     --secondary-text-color: #323233;
     --tertiary-text-color: #4B5563;
 
-    /**/
+
     --primary-menu-color-hover:#5B8BB1;
     --secondary-menu-color-hover:#5B8BB1;
 
@@ -22,25 +80,27 @@
 } 
 .dark-theme {
     --background-color: #141416;
+    --cero-text-color:white;
     --primary-text-color: #EFEBFA;
     --secondary-text-color: #D6D0E0;
     --tertiary-text-color: #D6D0E0;
 
-    /**/
+
     --primary-menu-color-hover:#5B8BB1;
     --secondary-menu-color-hover:#75DAD9;
 
     --jhampo-text-color:#5B8BB1;
 }
-/*Color en el navegador*/
+
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #F3F3FE;
+        --background-color: #F7FCFF;
+        --cero-text-color:black;
         --primary-text-color: #1F2937;
         --secondary-text-color: #323233;
         --tertiary-text-color: #4B5563;
     
-        /**/
+
         --primary-menu-color-hover:#5B8BB1;
         --secondary-menu-color-hover:#5B8BB1;
     
@@ -48,11 +108,12 @@
     } 
     .dark-theme {
         --background-color: #141416;
+        --cero-text-color:white;
         --primary-text-color: #EFEBFA;
         --secondary-text-color: #D6D0E0;
         --tertiary-text-color: #D6D0E0;
     
-        /**/
+ 
         --primary-menu-color-hover:#5B8BB1;
         --secondary-menu-color-hover:#75DAD9;
     
@@ -62,4 +123,6 @@
 body{
     background-color: var(--background-color);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    overflow-x: hidden;
 }
+*/

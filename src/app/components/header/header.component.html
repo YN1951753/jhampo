@@ -1,25 +1,78 @@
-<header id="header-menu">
-    <div class="menu">
-        <figure class="logo"  routerLink="/home">
-            <img src="assets/logo/jhampier.jpg" alt="Logo de JHAMPO">
-        </figure>  
-        <div class="btn" [ngClass]="{'btn-toggle': isToggled}" (click)="menuToggle()">
-            <button #btnMenu>
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
+<header id="header-menu" [ngClass]="{'with-border': isScrolled}">
+    <div class="header">
+        <div class="menu">
+            <figure class="logo"  routerLink="/home">
+                <img src="assets/logo/jhampier.jpg" alt="Logo de JHAMPO">
+                <figcaption>JHAMPO</figcaption>
+            </figure>  
+            <div class="btn" [ngClass]="{'btn-toggle': isToggled}" (click)="menuToggle()">
+                <button #btnMenu>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
         </div>
-    </div>
-    <nav class="nav"  >
-        <ul class="list" #list [ngClass]="{'list-toggle ': isToggled}">
-            <li #home routerLink="/home"  (click)="onRouteClick()"><a>Inicio</a></li>
-            <li #content routerLink="/content"  (click)="onRouteClick()"><a >Contenido</a></li>
-            <li #game ><a (click)="onRouteClick()">Juegos</a></li>
-            <li #article ><a (click)="onRouteClick()">Artículos</a></li>
-        </ul>
-    </nav>
-    
-    <button (click)=" toggleTheme()" >Hola</button> 
-</header>
+        <nav class="nav">
+            <ul class="list" #list [ngClass]="{'list-toggle ': isToggled}">
+                <!-- <li #home routerLink="/home"  (click)="onRouteClick()"><a>Inicio</a></li> -->
+              
+                <li (click)="openOptionsContent($event)" class="sub-menu">
+                    <div >
+                        <span >Contenido</span> 
+                        <img [ngClass]="{'arrow-toggle':isContentOpen}" class="arrow-up arrow-content" src="assets/icons/arrow-up.svg" alt="" #contentArrow>
+                    </div>
 
+                    <ul class="ul-child content"  #content [ngClass]="{'item-toggle':isContentOpen}">
+                        <li routerLink="/tutoriales">
+                            <img src="assets/icons/flask.svg" alt="icon">
+                            <div class="container-item">
+                                <h3>Tutoriales de Programación</h3>
+                                <p>Desarrolla tus habilidades con proyectos prácticos y divertidos</p>
+                            </div>
+                         
+                        </li>
+                        <li>
+                            <img src="assets/icons/book.svg" alt="icon">
+                            <div class="container-item">
+                                <h3>Lecturas</h3>
+                                <p>Descubre historias que te transportarán a lugares desconocidos</p>
+                            </div>
+                        </li>
+                       
+                    </ul>                        
+                </li>
+                <li (click)="openOptionsRedes($event)" class="sub-menu">
+                    <div >
+                        <span >Redes Sociales</span> 
+                        <img [ngClass]="{'arrow-toggle':isRedesOpen}" class="arrow-up arrow-redes" src="assets/icons/arrow-up.svg" alt="" #redesArrow>
+                    </div>
+
+                    <ul class="ul-child redes"  #redes [ngClass]="{'item-toggle':isRedesOpen}">
+                        <li routerLink="/tutoriales">
+                            <img src="assets/redes/youtube.svg" alt="icon" class="icon-redes">
+                            <div class="container-item">
+                                <h3>Youtube</h3>
+                                <p>Videos tutoriales de programcaion </p>
+                            </div>
+                         
+                        </li>
+                        <li>
+                            <img src="assets/redes/instagram.svg" alt="icon"  class="icon-redes">
+                            <div class="container-item">
+                                <h3>Instagram</h3>
+                                <p>Descubre historias que te transportarán a lugares desconocidos</p>
+                            </div>
+                        </li>
+                       
+                    </ul>                        
+                </li>
+                
+            </ul>
+            <a href="#" class="btn-juegos">
+                JUEGOS
+            </a>
+        </nav>
+       
+    </div>
+</header>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HeaderTutorial } from '../../../models/tutoriales/header-tutorial';
+import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-title-tutorial',
@@ -8,5 +10,10 @@ import { Component } from '@angular/core';
   styleUrl: './title-tutorial.component.css'
 })
 export class TitleTutorialComponent {
+    @Input() content?:HeaderTutorial;
 
+    btnYoutube(){
+      window.open(this.content?.srcYoutube, '_blank');
+    }
 }
+    

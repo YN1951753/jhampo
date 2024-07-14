@@ -1,22 +1,32 @@
+
 header{
-    width: 100%;
-    background-color: transparent;
+ 
     z-index: 1000;
-}
-header{
+    position: fixed;
+    top: 0;
+    
     display: flex;
-    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 0 2rem;
+  
+    padding: 0.9rem 2rem;
     gap: 1rem;
     background-color: var(--background-color);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
-
+header.with-border{
+    box-shadow: 0 2px 4px 4px  rgba(180, 180, 180, 0.2);
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
 /*LOGO*/
 .logo{
     padding: 0.5rem 0;
@@ -33,13 +43,28 @@ header{
 }
 .logo figcaption{
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.8rem;   
+     font-family: "Montserrat", sans-serif;
 }
 /*ITEMS*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
 .list{
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    color: var(--cero-text-color);
+}
+.list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
 }
 .list li{
     padding: 0.5rem;
@@ -47,7 +72,13 @@ header{
     position: relative;
 }
 .list li.select a{
-    color: var(--primary-menu-color-hover);
+  
+    color: var(--cero-text-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+
+
+
 }
 .list li.select::before{
     content: '';
@@ -62,33 +93,23 @@ header{
     transform: translateX(-50%);
     transition: width 0.3s;
 }
-
-/* .list li::after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 0;
-    background-color: var(--primary-menu-color-hover);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0 0 3px 3px;
-    transition: width 0.3s;
-    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.6);
-}
-.list li:hover::after{
-    width: 100%;
-} */
-.list li a{
-    color: var(--secondary-text-color);
+.list li span{
+    color: var(--cero-text-color);
     text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 550;
+    font-size: 22px;
+    font-weight: 400;
 }
-.list li:hover a{
-    color: var(--secondary-menu-color-hover);
+.list li .arrow-up{
+    width: 1.8rem;
+    transform: rotate(180deg) translateY(-8%);
+    transition: transform 0.3s ease;
 }
-
+.list li .arrow-content.arrow-toggle{
+    transform: rotate(0deg) translateY(8%);
+}
+.list li .arrow-redes.arrow-toggle{
+    transform: rotate(0deg) translateY(8%);
+}
 /*BTN*/
 .btn{
     padding: 15px;
@@ -124,51 +145,174 @@ header{
 .btn.btn-toggle button div:last-child{
     transform: rotate(-45deg);
 }
-@media (max-width: 510px){
-    header{
-        width: 100%;
-        background-color: transparent;
-        flex-direction: column;
-        gap: 0;
-        border-bottom: 1px solid rgb(204, 204, 204,0.2);
-    }
-    .list li.select::before{
-        width: 0;
-    }
-    
-    .btn{
-        display: block;
-    }
-    .menu  {
+/*btn juegos*/
+.btn-juegos{
+    border: 3px solid var(--cero-text-color);
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cero-text-color);
+    font-weight: 900;
+    font-size: 20px;
+}
 
-        display: flex;
-        flex-direction: row;
+/*LISTA ANIDADA*/
+.ul-child{
+    width: 480px;   
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    box-shadow: 0 0 15px 2px rgb(0, 0, 0,0.15);
+    border-radius: 7px;
+    padding: 15px;
+    display: none;
+}
+
+
+.content.item-toggle{
+    display: block;
+}
+.redes.item-toggle{
+    display: block;
+}
+
+
+.ul-child::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent var(--background-color) transparent;
+    position: absolute; 
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ul-child li{
+   
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 15px;
+    transition: transform 0.2s ease;
+    justify-content: start;
+}
+.ul-child li:hover{
+    transform: scale(1.04) ;
+}
+
+.ul-child .sub-menu > :first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+.ul-child img{
+    width: 3.2rem;
+}
+.ul-child .sub-menu h3{
+    font-size: 22px;
+    color: var(--cero-text-color) !important;
+    font-weight: 600;
+}
+.sub-menu > :first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+h3{
+    margin-bottom: 5px;
+}
+.sub-menu  .icon-redes{
+    width: 2.2rem;
+}
+@media (max-width: 1270px){ 
+   .header{
+   
+        flex-direction: column;
+        height: 100vh;
+
+   }
+   .menu{
+      
         width: 100%;
+        display: flex;
         justify-content: space-between;
+   }
+   .btn{
+        display: flex;
+   }
+   .logo{
+        width: auto;
+      
+   }
+   nav{
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+        justify-content: baseline;
+        justify-content: start;
+        padding-top: 10px;
+   }
+   .list{
+
+        width: 100%;
+
+        align-items: baseline;
+        justify-content: baseline;
+        flex-direction: column;
+        gap: 5px;
+   }
+   .sub-menu{
+      
+         width: 100%;
+         flex-direction: column;
+         position: relative;
+   }
+   .sub-menu span{
+        width: 100%;
+        font-weight: 600 !important;
+        font-size: 22px !important;
+    }
+    .sub-menu > :first-child{
+        display: flex;
+        width: 100%;
+       
+    }
+    .ul-child {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translate(0%,0%);
+        width: 100%;
+        box-shadow: none;
+    }
+    .ul-child {
+    
+       padding: 0;
+       justify-content: start;
+       margin-bottom: 15px;
+       
+    }
+    .ul-child::after{
+        content: "";
+        border: none;
         
     }
-    .nav{
-        margin-bottom: 0;
-
+    .btn-juegos{
         width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        
     }
-    .nav{
-    
-        height: 100%;
-    }
-    .list{
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 0;  
-        height: 0px;  
-        overflow: hidden;
-        transition: all 0.5s ease; 
-    }
-    .list.list-toggle{
-        height: 210px;
-    }
-    .no-transition{
-        transition: none; 
-    }
-
 }

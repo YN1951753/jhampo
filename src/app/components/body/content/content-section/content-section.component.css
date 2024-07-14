@@ -6,25 +6,37 @@
     grid-template-columns: 1fr;
     gap: 25px;
     padding: 10px 15px 15px 15px;
-
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(310px,1fr)
+    );
+  
 }
 .tutoriales .tutorial{
     width: 100%;
     display: flex;
     gap: 15px;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: start;
+ 
   
 }
+.tutoriales .tutorial p{
+    margin-bottom: 0.8rem;
+
+}
 .tutoriales .tutorial .mini-container{
-     width: 40%;
+
      height: auto;
      overflow: hidden;
      border-radius: 15px;
      position: relative;
+     width: 100%;
 }
 .tutoriales .tutorial article{
-    width: 60%;
+    width: 100%;
 }
 .tutoriales .tutorial .mini-container:hover::after{
     width: 100%;
@@ -40,6 +52,7 @@
     width: 0;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+ 
   }
 .tutoriales .tutorial .mini{
     width: 100%;
@@ -48,6 +61,7 @@
     position: relative;
     transform: scale(1.02);
     transition: all 0.5s ease-in-out;
+
 } 
 
 .tutoriales .tutorial h2{
@@ -55,8 +69,10 @@
     color: var(--primary-text-color);
     width: 100%;
     word-wrap: break-word; 
+
 } 
 .tutoriales .tutorial p{
+   
     font-size: 1rem;
     color: var(--secondary-text-color);
     word-wrap: break-word;
@@ -129,27 +145,3 @@
     }
   }
 /*Responsive*/
-@media (max-width: 900px){
-    .tutoriales{
-        display: grid;
-    grid-template-columns: repeat(
-        auto-fill,
-        minmax(310px,1fr)
-    );
-    }
-    .tutoriales .tutorial {
-        flex-direction: column;
-       justify-content: start;
-    }
-    .tutoriales .tutorial .mini-container{
-        width: 100%;
-    }
-    .tutoriales .tutorial article{
-        width: 100%;
-    }
-    .tutoriales .tutorial p{
-      
-        margin-bottom: 0.8rem;
-
-    } 
-}

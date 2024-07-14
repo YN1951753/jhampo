@@ -1,13 +1,12 @@
 /*Anuncio*/
 .anuncio-container{
-
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 12px 5px;
+    margin: 20px;
+
 }
 .anuncio{
-    width: 280px;
+    width: 200px;
     height: 500px;
-    border: 2px solid blue;
 }

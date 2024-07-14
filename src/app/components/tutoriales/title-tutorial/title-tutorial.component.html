@@ -1,12 +1,19 @@
 <header>
-    <img class="img-title" src="assets/languages/csharp.svg" alt="csharp">
+    <img class="img-title" src="{{content?.srcImg}}" alt="csharp">
     <div class="title">
         <!-- <h1><em>Crea tu Primer Juego</em> DESDE 0 en <strong>C#</strong></h1>    -->
-         <h1>Crea tu Primer Juego DESDE 0 en C#</h1>
-        <a>
-            <img class="icon-youtube" src="assets/redes/yotube-white.svg" alt="">
-            <aside >VER EN YOUTUBE</aside>
-        </a>
+         <h1>{{content?.title}}</h1>
+         <div class="redes">
+            <aside class="yt" (click)="btnYoutube()">
+                <img class="icon" src="assets/redes/yotube-white.svg" alt="">
+                <span>Video</span>
+             </aside>
+         
+         </div>
+        
+       
+       
+        
     </div>
 
 </header>

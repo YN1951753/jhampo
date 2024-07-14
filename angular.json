@@ -90,11 +90,12 @@
               }
             ],
             "styles": [
-              "node_modules/prismjs/themes/prism-tomorrow.css",
               "src/styles.css"
+              
+
             ],
             "scripts": [
-                "node_modules/prismjs/prism.js"
+            
                 
             ]
           }

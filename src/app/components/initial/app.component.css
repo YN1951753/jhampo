@@ -3,9 +3,10 @@ main{
     height: 100vh;
     display: flex;
     justify-content: center;
+  
 }
 .container-router{
     width: 100%;
     display: flex;
-    position: relative;
+    justify-content: center;
 }

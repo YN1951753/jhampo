@@ -1,0 +1,68 @@
+/*En comun*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+h2{
+    font-weight: 700;
+    margin: 15px 0 8px 0;
+}
+
+
+/*Articulo*/
+article
+{
+    width: 700px;
+    padding: 30px 30px;
+    
+}
+.anuncio{
+ 
+    width: 100%;
+    display: flex;
+}
+
+/*1240*/
+
+
+/*En comun resosmive*/
+@media (max-width: 1350px) {
+    /*Anuncio*/
+     .anuncio{
+         display: none;
+     }
+     
+ }
+@media (max-width: 1350px) {
+   
+    .anuncio{
+        display: none;
+    }
+    
+}
+@media (max-width: 1000px) {
+    article{
+        width: 600px
+    }
+}
+@media (max-width: 860px) {
+  
+    article{
+        width: 570px
+    }
+}
+
+
+@media (max-width: 765px) {
+    /*Sidebvar*/
+    .container{
+        width: 100vw;
+    }
+    article{
+        width: 100%
+    }
+    
+}

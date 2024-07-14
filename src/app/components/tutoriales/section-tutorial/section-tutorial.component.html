@@ -1,0 +1,7 @@
+@for (item of content?.parrafo; track item) {
+    <p (click)="siuu()">{{item}}</p>
+}
+@if(!(content?.img?.trim()=="")){
+    <img src="{{content?.img}}" alt="img-tutorial">
+}
+

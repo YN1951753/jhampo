@@ -1,8 +1,9 @@
 header{
     display: flex;
     gap: 1rem;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     position: relative;
+;
 }
 .img-title{
     width: 5.2rem ;
@@ -10,40 +11,45 @@ header{
 .title{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     
 }
 h1{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-text-color);
+    color: var(--cero-text-color);
 }
-a{
-    width: 10rem;
+.redes{
+    display: flex;
+    gap: 15px;
+}
+aside{
+    background-color:#1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#1F2937;
-    padding: 0.4rem 0rem;
-    border-radius: 10px;
-    cursor: pointer;
-    gap: 5px;
-    
+    padding: 7px 16px;
+    gap: 7px;
+    border-radius: 8px;
 }
-a:hover .icon-youtube{
-    animation: rotate45 0.3s ease-in-out;
+aside span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #E5E5E6;
 }
-aside{
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: white;
-    
-}
-.icon-youtube{
-    width: 1.5rem;
+.icon{
+    width: 1.3rem;
   
 }
 
+
+.img-title{
+    display: non;
+    position: absolute;
+    right: 0;
+    width: 10rem;
+    z-index: -2;
+    opacity: 0.2;
+    top: -25px;
+}
 
 @keyframes rotate45 {
     0% {
@@ -64,6 +70,6 @@ aside{
         width: 10rem;
         z-index: -2;
         opacity: 0.2;
-        bottom: -25px;
+        top: -25px;
     }
 }
