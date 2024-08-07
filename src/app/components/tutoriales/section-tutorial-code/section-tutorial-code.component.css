@@ -1,3 +1,11 @@
+
 p{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+ }
+ ::ng-deep code{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: white;
+    padding: 0 2px;
+    font-weight: 500;
  }

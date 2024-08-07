@@ -15,7 +15,7 @@ import { HeaderTutorial } from '../../../../models/tutoriales/header-tutorial';
   standalone: true,
   imports: [TitleTutorialComponent,AnuncioVerticalComponent,SidebarTutorialComponent,CodigoDesign1Component,SectionTutorialComponent,SectionTutorialCodeComponent],
   templateUrl: './naves-csharp.component.html',
-  styleUrl: './naves-csharp.component.css'
+  styleUrl: './../style-video-tutorial.css'
 })
 
 export class NavesCsharpComponent {
@@ -62,7 +62,6 @@ export class NavesCsharpComponent {
   part1:SectionTutorial = {
     parrafo:['Abrimos Visual Studio y creamos un nuevo proyecto "Aplicación de consola".'],
     img:"assets/tutoriales/csharp-nave/img-csharp-nave1.jpg",
-
   }
   part2:SectionTutorial = {
     parrafo:['Elegimos el framework (versiones probadas para el proyecto: desde la 6.0 en adelante).'],

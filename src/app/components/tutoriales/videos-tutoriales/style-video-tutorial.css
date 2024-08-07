@@ -4,23 +4,23 @@
     display: flex;
     justify-content: center;
     position: relative;
-
+  
 }
 h2{
     font-weight: 700;
-    margin: 15px 0 8px 0;
+    margin: 15px 0 15px 0;
 }
 
 
 /*Articulo*/
 article
-{   border: 2px solid red;
+{
     width: 700px;
     padding: 30px 30px;
 }
 .anuncio{
  
-    width: 100%;
+    border: 2px solid red;
     display: flex;
 }
 
@@ -28,20 +28,14 @@ article
 
 
 /*En comun resosmive*/
-@media (max-width: 1350px) {
+@media (max-width: 1410px) {
     /*Anuncio*/
      .anuncio{
          display: none;
      }
      
  }
-@media (max-width: 1350px) {
-   
-    .anuncio{
-        display: none;
-    }
-    
-}
+
 @media (max-width: 1000px) {
     article{
         width: 600px
@@ -65,3 +59,5 @@ article
     }
     
 }
+
+ 

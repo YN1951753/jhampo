@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { SectionTutorial } from '../../../models/tutoriales/section-tutorial';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -12,10 +12,5 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class SectionTutorialComponent {
     @Input() content?:SectionTutorial;
     
-    constructor(private sanitizer: DomSanitizer){
    
-    }
-    siuu(){
-      console.log("texto puro");
-    }
 }

@@ -30,12 +30,9 @@ export class SectionTutorialCodeComponent implements OnInit {
 
     lines.splice(0, 1); 
     lines.pop();
-    lines = lines.map(line => line.replace(/^\s{4}/, ''));
 
     return lines.join('\n');
   }
-  siuu(){
-    console.log("texto puro");
-  }
+
 
 }

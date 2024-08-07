@@ -1,5 +1,5 @@
 @for (item of content?.parrafo; track item) {
-    <p (click)="siuu()">{{item}}</p>
+    <p [innerHTML]="item"></p>
 }
 <app-codigo-design-1 class="code" [language]="language" [codeSnippet]="code"/>
 

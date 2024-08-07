@@ -14,9 +14,11 @@ h2{
 
 /*Articulo*/
 article
-{   border: 2px solid red;
+{   
+    border: 2px solid red;
     width: 700px;
     padding: 30px 30px;
+    
 }
 .anuncio{
  
